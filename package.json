@@ -1,0 +1,37 @@
+{
+  "name": "nodecg-livesplit",
+  "version": "0.0.0",
+  "description": "Connect to blah",
+  "homepage": "",
+  "author": {
+    "name": "Clubwho",
+    "email": "n/a",
+    "url": ""
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.1.1",
+    "dashboardPanels": [
+      {
+        "name": "live-split-connector",
+        "title": "LiveSplit Connector",
+        "width": 2,
+        "file": "live-split-connector.html",
+        "headerColor": "#525F78"
+      }
+    ]
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-ipc": "^9.1.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nodecg-livesplit",
+  "description": "Connect to blah",
+  "main": "",
+  "authors": [
+    "Clubwho"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "homepage": "https://github.com/clubwho/nodecg-livesplit",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-button": "^2.1.1",
+    "nodecg-toast": "NodeCGElements/nodecg-toast#^1.0.0",
+    "paper-spinner": "^2.1.0",
+    "paper-input": "^2.2.3"
+  }
+}

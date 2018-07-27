@@ -1,0 +1,58 @@
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/nodecg-toast/nodecg-toast.html">
+
+<dom-module id="nodecg-livesplit">
+	<template>
+		<style>
+			paper-button {
+				color: white;
+			}
+
+			paper-input {
+				--paper-input-container-color: rgb(187, 187, 187);
+				--paper-input-container-focus-color: rgb(180, 206, 255);
+				--paper-input-container-input-color: white;
+				display: inline-block;
+			}
+
+			#ipAddress {
+				width: 60%;
+			}
+
+			#port {
+				width: 38%;
+			}
+
+			#connect {
+				background-color: #4caf50;
+				width: 46%;
+			}
+
+			#connect[disabled] {
+				background-color: #74b975;
+				color: rgb(255, 196, 196);
+			}
+
+			#disconnect {
+				background-color: #f44336;
+				float: right;
+				width: 46%;
+			}
+
+			#disconnect[disabled] {
+				background-color: #f1786f;
+				color: rgb(255, 196, 196);
+			}
+		</style>
+
+		<paper-input label="IP" value="localhost" id="ipAddress"></paper-input>
+		<paper-input label="Port" value="16834" id="port"></paper-input>
+		<paper-button id="connect" raised on-click="_livesplitConnect">Connect</paper-button>
+		<paper-button disabled id="disconnect" raised on-click="_livesplitDisconnect">Disconnect</paper-button>
+		<nodecg-toast id="livesplitToast" duration="5" text="Conneting to LiveSplit"></nodecg-toast>
+
+	</template>
+
+	<script src="liveSplitConnector.js"></script>
+</dom-module>

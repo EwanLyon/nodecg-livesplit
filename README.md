@@ -10,9 +10,9 @@ NodeCG-LiveSplit is a NodeCG bundle allows you to connect, send and recieve data
 
 ## Installation
 
-1. Clone (or download & extract) to `nodecg/bundles/nodecg-liveSplit`.
+1. Clone (or download & extract) to `nodecg/bundles/nodecg-livesplit`.
 2. Install `bower` if you have not already (`npm install -g bower`)
-3. `cd nodecg/bundles/nodecg-liveSplit` and run `npm install`, then `bower install`
+3. `cd nodecg/bundles/nodecg-livesplit` and run `npm install`, then `bower install`
 4. Run the nodecg server: `node index.js` (or `nodecg start` if you have [`nodecg-cli`](https://github.com/nodecg/nodecg-cli) installed) from the `nodecg` root directory.
 
 ### Commands
@@ -28,12 +28,12 @@ The actual commands to send to LiveSplit are documented [here](https://github.co
 
 Send Action
 ```
-nodecg.sendMessageToBundle('livesplit:sendAction', 'nodecg-liveSplit', 'starttimer');
+nodecg.sendMessageToBundle('livesplit:sendAction', 'nodecg-livesplit', 'starttimer');
 ```
 
 Send Data
 ```
-nodecg.sendMessageToBundle('livesplit:sendData', 'nodecg-liveSplit', 'getsplitindex', (result) => {
+nodecg.sendMessageToBundle('livesplit:sendData', 'nodecg-livesplit', 'getsplitindex', (result) => {
 	console.log(result);
 });
 ```

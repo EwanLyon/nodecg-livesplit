@@ -7,6 +7,7 @@ NodeCG-LiveSplit is a NodeCG bundle allows you to connect, send and recieve data
 
 - [Node.js 8 or greater (8 recommended, newer versions not tested)](https://nodejs.org/)
 - [NodeCG v1.x](https://github.com/nodecg/nodecg)
+- [LiveSplit Server](https://github.com/LiveSplit/LiveSplit.Server) on LiveSplit
 
 ## Installation
 
